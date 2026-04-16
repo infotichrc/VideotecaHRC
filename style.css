@@ -1,0 +1,183 @@
+:root {
+    /* El verde oficial que me pediste */
+    --hospital-green: #029834;
+    /* Un verde clarito para fondos de botones, basado en el verde oficial */
+    --hospital-light: #e9f7ef;
+    /* Un verde más oscuro para el borde del encabezado */
+    --hospital-dark: #017a29;
+    --dark: #2c3e50;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; 
+    background-color: #f8f9fa; 
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+.container { 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+}
+
+header {
+    background: var(--hospital-green); 
+    color: white; 
+    padding: 15px 0;
+    border-bottom: 4px solid var(--hospital-dark);
+}
+
+.header-flex { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo-area strong { 
+    display: block; 
+    font-size: 1.2rem; 
+}
+
+.hero { 
+    text-align: center; 
+    padding: 40px 0; 
+}
+
+.hero h1 { 
+    font-size: 2rem; 
+    color: var(--hospital-green); 
+    margin-bottom: 10px; 
+}
+
+.search-box input {
+    width: 100%; 
+    max-width: 600px; 
+    padding: 18px;
+    border: 2px solid var(--hospital-green); 
+    border-radius: 30px;
+    font-size: 1.1rem; 
+    outline: none;
+}
+
+.filter-grid {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: center; 
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 12px 20px; 
+    border: 1px solid #ddd; 
+    background: white;
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 0.9rem;
+}
+
+.filter-btn.active { 
+    background: var(--hospital-green); 
+    color: white; 
+    border-color: var(--hospital-green); 
+}
+
+.video-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 20px;
+}
+
+.card {
+    background: white; 
+    border-radius: 15px; 
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+    border: 1px solid #eee;
+}
+
+.video-box { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    background: #000; 
+}
+
+.video-box iframe { 
+    position: absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    border:0; 
+}
+
+.card-content { 
+    padding: 15px; 
+}
+
+.card-content h3 { 
+    margin: 0 0 10px; 
+    font-size: 1.1rem; 
+    color: var(--hospital-green); 
+}
+
+.btn-info {
+    display: block; 
+    width: 100%; 
+    padding: 12px; 
+    background: var(--hospital-light);
+    color: var(--hospital-green); 
+    text-align: center; 
+    border: none;
+    border-radius: 8px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    font-size: 1rem;
+}
+
+/* Modal */
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.8); 
+}
+
+.modal-content { 
+    background: white; 
+    margin: 5% auto; 
+    padding: 25px; 
+    width: 90%; 
+    max-width: 500px; 
+    border-radius: 15px; 
+}
+
+.close { 
+    float: right; 
+    font-size: 30px; 
+    cursor: pointer; 
+}
+
+.modal-meta { 
+    font-size: 0.85rem; 
+    color: #666; 
+    margin-bottom: 10px; 
+    font-style: italic; 
+}
+
+footer { 
+    background: var(--dark); 
+    color: white; 
+    text-align: center; 
+    padding: 30px 0; 
+    margin-top: 50px; 
+}

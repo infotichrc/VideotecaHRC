@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoyo al Cuidador | Hospital Regional de Copiapó</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo-area">
+            <strong>Hospital Regional de Copiapó</strong>
+            <span>Unidad del Dolor y Rehabilitación</span>
+        </div>
+        <div class="emergency-tag">Guía para el cuidado en casa</div>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <h1>¿En qué podemos ayudarle hoy?</h1>
+        <p>Seleccione una categoría o busque lo que necesita aprender para cuidar a su familiar.</p>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Ejemplo: Cómo bañarlo, cómo darle comida...">
+        </div>
+    </section>
+
+    <div class="filter-grid">
+        <button class="filter-btn active" data-filter="all">Ver todo</button>
+        <button class="filter-btn" data-filter="mover">Mover al paciente</button>
+        <button class="filter-btn" data-filter="aseo">Limpieza y Piel</button>
+        <button class="filter-btn" data-filter="comida">Alimentación</button>
+        <button class="filter-btn" data-filter="animo">Ánimo y Consejos</button>
+        <button class="filter-btn" data-filter="tramites">Leyes y Ayuda</button>
+    </div>
+
+    <div class="video-grid" id="videoGrid">
+        </div>
+</main>
+
+<div id="infoModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div class="modal-meta" id="modalMeta"></div>
+        <hr>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<footer>
+    <p>Hospital Regional de Copiapó - Unidad del Dolor y Rehabilitación <br> 
+    <small>Este material es educativo y no reemplaza la indicación médica.</small></p>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
