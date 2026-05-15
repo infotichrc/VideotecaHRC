@@ -1,49 +1,86 @@
 const catalogo = [
     {
-        id: 1,
-        titulo: "Cómo mover al paciente en la cama",
-        categoria: "mover", // <-- Aseguramos que se llame 'categoria'
-        tags: "postrado, mover, cama, kinesiologo, espalda, fuerza, girar",
-        profesional: "Kinesiología",
-        videoUrl: "vB-fR3n9lWk",
-        explicacion: "En este video enseñamos a girar al paciente de lado y a sentarlo sin que usted se lastime la espalda. Es vital para evitar que al paciente le salgan heridas (escaras)."
+    id: 1,
+    titulo: "Cómo mover al paciente en la cama",
+    categoria: "mover",
+    tags: "postrado, mover, cama, kinesiologo, espalda, fuerza, girar, ergonomia",
+    profesional: "Kinesiología y Enfermería",
+    videoUrl: "BwDZlwmx3Uk",
+    explicacion: "Aprenda las técnicas correctas para girar al paciente de lado, subirlo en la cama y sentarlo. Diseñado para proteger la postura del cuidador y evitar lesiones lumbares mientras se mantiene seguro al paciente."
     },
     {
-        id: 2,
-        titulo: "Cómo bañar a alguien que no se puede levantar",
-        categoria: "aseo",
-        tags: "baño, limpieza, aseo, enfermera, higiene, tina, esponja",
-        profesional: "Enfermería",
-        videoUrl: "M2_H0P9O25Y",
-        explicacion: "Paso a paso para lavar el cuerpo del paciente usando toallas húmedas y jabón neutro, manteniendo la privacidad y el calor del paciente."
+      id: 2,
+      titulo: "Transferencia segura de la cama a la silla",
+      categoria: "mover",
+      tags: "postrado, transferencia, silla, sillón, mover, fuerza, seguridad",
+      profesional: "Kinesiología y Terapia Ocupacional",
+      videoUrl: "twkrRvacIFY",
+      explicacion: "Guía rápida paso a paso para trasladar de forma segura a un paciente desde el borde de la cama hacia una silla o sillón, minimizando el esfuerzo físico del cuidador."
     },
     {
-        id: 3,
-        titulo: "Cuidado de la piel (evitar heridas)",
-        categoria: "aseo",
-        tags: "heridas, escaras, piel, parches, crema, llagas",
-        profesional: "Enfermería",
-        videoUrl: "M2_H0P9O25Y",
-        explicacion: "Consejos sobre qué cremas usar y cada cuántas horas hay que cambiar de posición al familiar para que su piel no sufra."
+      id: 3,
+      titulo: "Baño en cama: Guía completa de higiene paso a paso",
+      categoria: "aseo",
+      tags: "baño, aseo, cama, higiene, limpieza, esponja, comodidad",
+      profesional: "Enfermería",
+      videoUrl: "0-EU9uIzTWs",
+      explicacion: "Aprenda a realizar el aseo completo del paciente sin sacarlo de la cama. Incluye cómo lavar el cabello, el cuerpo y realizar el cambio de sábanas sucias por limpias de manera eficiente."
     },
     {
-        id: 4,
-        titulo: "Alimentación por sondas (Gastrostomía)",
-        categoria: "comida",
-        tags: "comida, sonda, guatita, nutricionista, leche, suplemento, manguera",
-        profesional: "Nutricionista",
-        videoUrl: "dQw4w9WgXcQ",
-        explicacion: "Si su familiar se alimenta por un tubito a la guatita, aquí explicamos cómo pasar el alimento y cómo limpiar la zona para evitar infecciones."
+      id: 4,
+      titulo: "Técnica práctica para el baño de esponja en casa",
+      categoria: "aseo",
+      tags: "baño, aseo, cama, limpieza, cuidador, piel, bienestar",
+      profesional: "Enfermería y Cuidado Domiciliario",
+      videoUrl: "3aDpX_nuA74",
+      explicacion: "Un video corto y didáctico ideal para el día a día. Muestra cómo organizar el agua, el jabón y las toallas para mantener al paciente limpio, seco y cómodo respetando su privacidad."
     },
     {
-        id: 5,
-        titulo: "Consejos para el cuidador (Salud Mental)",
-        categoria: "animo",
-        tags: "cansancio, estres, pena, psicologo, ayuda, agotamiento",
-        profesional: "Psicología / Servicio Social",
-        videoUrl: "dQw4w9WgXcQ",
-        explicacion: "Cuidar a un enfermo es agotador. Aquí le damos consejos para que usted también descanse y pida ayuda cuando la necesite."
+      id: 5,
+      titulo: "Cambios posturales para prevenir úlceras por presión",
+      categoria: "aseo",
+      tags: "ulceras, escaras, heridas, piel, postura, almohadas, prevencion",
+      profesional: "Dermatología y Enfermería",
+      videoUrl: "gCrjNXsUPPg",
+      explicacion: "Las heridas por estar acostado (escaras) se pueden evitar. En este video aprenderá cómo usar almohadas para liberar la presión en talones, cadera y espalda, y cada cuánto tiempo rotar al paciente."
+    },
+    {
+      id: 6,
+      titulo: "Cuidados esenciales y humectación de la piel",
+      categoria: "aseo",
+      tags: "piel, crema, escaras, heridas, masaje, prevencion, hidratacion",
+      profesional: "Dermatología",
+      videoUrl: "3Xp9IcbM0m8",
+      explicacion: "La piel de un paciente postrado es muy delicada. Conozca los productos recomendados para la hidratación profunda, zonas críticas que revisar a diario y qué errores evitar al aplicar masajes."
+    },
+    {
+      id: 7,
+      titulo: "Cómo administrar la alimentación por sonda de gastrostomía",
+      categoria: "comida",
+      tags: "gastrostomia, sonda, peg, alimentacion, nutricion, jeringa, purga",
+      profesional: "Nutrición y Enfermería",
+      videoUrl: "mi2cKqA91ZA",
+      explicacion: "Aprenda el proceso correcto para pasar el alimento por la sonda: la posición en la que debe estar el paciente, cómo verificar que la sonda esté libre y el lavado obligatorio al terminar."
+    },
+    {
+      id: 8,
+      titulo: "Higiene y mantenimiento de la sonda PEG en casa",
+      categoria: "comida",
+      tags: "sonda, peg, gastrostomia, limpieza, infeccion, curacion, estoma",
+      profesional: "Enfermería Clínica",
+      videoUrl: "wBHVQoiOqwY",
+      explicacion: "Tutorial para cuidar la piel que rodea la sonda de gastrostomía. Aprenda a limpiarla diariamente, rotar el soporte para evitar enterrados y detectar signos de alerta o infección a tiempo."
+    },
+    {
+      id: 9,
+      titulo: "Movilizaciones y transferencias de pacientes",
+      categoria: "mover",
+      tags: "postrado, transferencia, silla, sillón, mover, fuerza, seguridad",
+      profesional: "Kinesiología",
+      videoUrl: "h7-wetI62JQ",
+      explicacion: "Aprenda las técnicas correctas para girar al paciente de lado, subirlo en la cama y sentarlo. Diseñado para proteger la postura del cuidador y evitar lesiones lumbares mientras se mantiene seguro al paciente."
     }
+
 ];
 
 const videoGrid = document.getElementById('videoGrid');
@@ -76,7 +113,7 @@ function cargarVideos() {
         card.className = 'card';
         card.innerHTML = `
             <div class="video-box">
-                <iframe src="https://www.youtube.com/embed/${item.videoUrl}" allowfullscreen></iframe>
+                <iframe loading="lazy" src="https://www.youtube.com/embed/${item.videoUrl}" title="${item.titulo}" allowfullscreen></iframe>
             </div>
             <div class="card-content">
                 <h3>${item.titulo}</h3>
